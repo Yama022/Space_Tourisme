@@ -1,0 +1,86 @@
+@use 'src/styles/vars';
+@import 'src/styles';
+
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  color: vars.$tertiary-color;
+  position: absolute;
+  &__logo {
+    position: relative;
+    top: 10%;
+    left: 3%;
+  }
+  &__border {
+    border-top: 1px solid rgba($color: vars.$tertiary-color, $alpha: 0.4);
+    width: 32%;
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    z-index: 1;
+  }
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 12%;
+    margin: auto;
+    position: relative;
+    &__title {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 60%;
+      height: 100%;
+      background-color: rgba($color: vars.$tertiary-color, $alpha: 0.2);
+      backdrop-filter: blur(2px);
+      & h4 {
+        position: relative;
+        top: 0%;
+        padding-top: 1.2em;
+        right: 10%;
+        text-transform:uppercase;
+        margin-right: 2em;
+        &:hover {
+          border-bottom: 3px solid white;
+        }
+      }
+      & strong {
+        font-weight: 900;
+        margin-right: .6em;
+      }
+    }
+  }
+  &__contain {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    & h5 {
+      position: absolute;
+      bottom: 15%;
+      left: 3%;
+      color: vars.$secondary-color;
+      line-height: 1.4;
+      width: 30%;
+      & h1 {
+        color: vars.$tertiary-color;
+        margin: .1em 0;
+      }
+    }
+    & span {
+      text-transform:uppercase;
+      letter-spacing: 3px;
+      position: absolute;
+      bottom: 15%;
+      right: 15%;
+      color: black;
+      font-size: 3em;
+      padding: 2.5em;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+}
