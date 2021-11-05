@@ -1,0 +1,67 @@
+@use 'src/styles/vars';
+@import 'src/styles';
+
+.header {
+  border: 1px solid red;
+  .home {
+    border: 1px solid white;
+    height: 100vh;
+    width: 100vw;
+    color: vars.$tertiary-color;
+    position: absolute;
+    &__logo {
+      position: relative;
+      top: 10%;
+      left: 3%;
+      & img {
+        width: 3%;
+        height: 3%;
+      }
+    }
+    &__border {
+      border-top: 1px solid rgba($color: vars.$tertiary-color, $alpha: 0.4);
+      width: 40%;
+      position: absolute;
+      top: 13%;
+      left: 12%;
+      z-index: 1;
+    }
+      &__head {
+        border: 1px solid green;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+        height: 10%;
+        margin: auto;
+        position: relative;
+        &__title {
+          position: absolute;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          right: 0%;
+          width: 50%;
+          height: 13%;
+          background-color: rgba($color: vars.$tertiary-color, $alpha: 0.2);
+          backdrop-filter: blur(2px);
+          & h4 {
+            position: relative;
+            top: 0%;
+            padding-top: 1.2em;
+            right: 10%;
+            text-transform:uppercase;
+            margin-right: 2em;
+            padding-bottom: 1.25em;
+            &:hover {
+              border-bottom: 3px solid white;
+            }
+          }
+          & strong {
+            font-weight: 900;
+            margin-right: .6em;
+          }
+        }
+      }
+  }
+}
