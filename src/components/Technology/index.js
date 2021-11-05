@@ -1,10 +1,10 @@
 import React from 'react';
+import background from 'src/assets/destination/background-destination-desktop.jpg';
 import Header from 'src/components/Header';
-import background from 'src/assets/destination/background-destination-desktop.jpg'; 
 
 import './styles.scss';
 
-export default function Destination() {
+export default function Technology() {
   return (
     <div className="home" style={{
       backgroundImage: `url(${background})`,
@@ -13,7 +13,7 @@ export default function Destination() {
       backgroundSize: 'cover',      
       objectFit: 'contain',
     }}>
-      <div className="destination">
+      <div className="technology">
         <Header />
       </div>
 
