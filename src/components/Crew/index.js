@@ -15,6 +15,7 @@ export default function Crew() {
     }}>
       <div className="crew">
         <Header />
+        <h1>Crew</h1>
       </div>
 
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from 'src/components/Header';
 import background from 'src/assets/destination/background-destination-desktop.jpg'; 
-import moon from 'src/assets/destination/image-moon.png';
+import mars from 'src/assets/destination/image-mars.png';
 import { Link } from 'react-router-dom';
 
 import './styles.scss';
@@ -23,12 +23,13 @@ export default function Destination() {
         </div>
 
         <div className="destination__image">
-          
+          <img src={mars} alt=""/>
         </div>
 
         <div className="destination__content"> 
           <div className="destination__content__title">
             <nav>
+
               <Link to="/moon" className="destination__content__title__select" activeClassName="destination__content__title__select--active" exact>
                 <h5>MOON</h5>
               </Link>
@@ -44,6 +45,26 @@ export default function Destination() {
             </nav>
           </div>
           <div className="destination__content__text">
+            <div className="destination__content__text__title">
+              <h1>MARS</h1>
+            </div>
+            <div className="destination__content__text__desc">
+              <p>
+                Don’t forget to pack your hiking boots. 
+                You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system.
+                It’s two and a half times the size of Everest!
+              </p>
+            </div>
+            <div className="destination__content__text__value">
+              <div className="destination__content__text__value__dist">
+                <h5>AVG. DISTANCE</h5>
+                <p>225 MIL. KM</p>
+              </div>
+              <div className="destination__content__text__value__travel">
+                <h5>EST. TRAVEL TIME</h5>
+                <p>9 MONTHS</p>
+              </div>
+            </div>
           </div>
 
         </div>

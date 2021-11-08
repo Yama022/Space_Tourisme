@@ -2,4 +2,8 @@
   height: 100vh;
   width: 100vw;
   position: absolute;
+  & h1 {
+    color: white;
+    font-size: 2em;
+  }
 }
