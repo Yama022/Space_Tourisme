@@ -1,9 +1,145 @@
+@use 'src/styles/vars';
+@import 'src/styles';
+
+
 .crew {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  & h1 {
-    color: white;
-    font-size: 2em;
+  &__title {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    & h1 {
+      font-size: 2.5em;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-weight: bold;
+      & span {
+        color: grey;
+        padding-right: .6em;
+      }
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    background-repeat: no-repeat;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    width: 30%;
+    height: 50%;
+    &__title {
+      width: 70%;
+      height: 20%;
+      & nav {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        justify-content: space-between;
+        padding: .3em;
+        :visited {
+          border: 5px solid red;
+          color: red;
+        }
+        & h5 {
+          color: vars.$secondary-color;
+          letter-spacing: 2px;
+          border-bottom: 1px solid red hidden;
+          &:hover {
+            color: white;
+            border-bottom: 3px solid white;
+            padding-bottom: .5em;
+          }
+        }
+      }
+      &__select {
+        &:after {
+          content: ""; 
+          display: block;
+          margin: 0 auto;
+        }
+        &--active {
+          border-bottom: 1px solid red;
+          &:after {
+            border-bottom: 1px solid red; 
+          }
+        }
+      }
+    }
+    &__text{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: auto;
+      height: 80%;
+      padding-top: 20%;
+      &__title {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        & h1 {
+          letter-spacing: 5px;
+          color: white;
+          font-size: 100px;
+          font-family: bellefair regular;
+          font-weight: 400;
+        }
+      }
+      &__desc {
+        & p {
+          color: vars.$secondary-color;
+          font-size: 1.6em;
+          letter-spacing: 1px;
+          line-height: 1.2em;
+        }
+      }
+      &__value {
+        border-top: 1px solid grey;
+        padding-top: 2.5em;
+        padding-right: 5em;
+        display: flex;
+        justify-content: space-between;
+        &__dist {
+          color: white;
+          & h5 {
+            padding-bottom: 1em;
+            font-size: 14px;
+            letter-spacing: 2.35px;
+            color: vars.$secondary-color;
+          }
+          & p {
+            font-size: 28px;
+            font-weight: bold;
+            padding-left: .1em;
+            letter-spacing: 2.35px;
+          }
+        }
+        &__travel {
+          color: white;
+          & h5 {
+            padding-bottom: 1em;
+            font-size: 14px;
+            letter-spacing: 2.35px;
+            color: vars.$secondary-color;
+          }
+          & p {
+            font-size: 28px;
+            font-weight: bold;
+            padding-left: .1em;
+            letter-spacing: 2.35px;
+          }
+        }
+      }
+    }
   }
 }

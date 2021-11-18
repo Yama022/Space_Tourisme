@@ -9,6 +9,10 @@ import Moon from 'src/components/Destination/moon';
 import Mars from 'src/components/Destination/mars';
 import Europa from 'src/components/Destination/europa';
 import Titan from 'src/components/Destination/titan';
+import Douglas from 'src/components/Crew/douglas';
+import Mark from 'src/components/Crew/mark';
+import Victor from 'src/components/Crew/victor';
+import Anousheh from 'src/components/Crew/anousheh';
 import './styles.scss';
 
 // == Composant
@@ -25,6 +29,10 @@ export default function Space() {
           <Route path="/mars" element={<Mars />} />
           <Route path="/europa" element={<Europa />} />
           <Route path="/titan" element={<Titan />} />
+          <Route path="/douglas" element={<Douglas />} />
+          <Route path="/victor" element={<Victor />} />
+          <Route path="/mark" element={<Mark />} />
+          <Route path="/anousheh" element={<Anousheh />} />
         </Routes>
       </div>
     </Router>

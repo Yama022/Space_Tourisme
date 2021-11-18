@@ -19,7 +19,7 @@ export default function Destination() {
         <Header />
 
         <div className="destination__title">
-          <h1><span>01</span> Pick your Destination</h1>
+          <h1><span>01</span>Pick your Destination</h1>
         </div>
 
         <div className="destination__image">
