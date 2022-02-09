@@ -25,10 +25,10 @@ export default function Space() {
           <Route path="/destination" element={<Destination />} />
           <Route path="/crew" element={<Crew />} />
           <Route path="/technology" element={<Technology />} />
-          <Route path="/moon" element={<Moon />} />
-          <Route path="/mars" element={<Mars />} />
-          <Route path="/europa" element={<Europa />} />
-          <Route path="/titan" element={<Titan />} />
+          <Route path="/destination/moon" element={<Moon />} />
+          <Route path="/destination/mars" element={<Mars />} />
+          <Route path="/destination/europa" element={<Europa />} />
+          <Route path="/destination/titan" element={<Titan />} />
           <Route path="/douglas" element={<Douglas />} />
           <Route path="/victor" element={<Victor />} />
           <Route path="/mark" element={<Mark />} />

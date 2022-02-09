@@ -42,7 +42,10 @@
           height: 13%;
           background-color: rgba($color: vars.$tertiary-color, $alpha: 0.2);
           backdrop-filter: blur(2px);
-          & h4 {
+          .active > .home__head__title__link {
+            border-bottom: 3px solid white;
+          }
+          &__link {
             position: relative;
             top: 0%;
             padding-top: 1.2em;
@@ -53,6 +56,7 @@
             &:hover {
               border-bottom: 3px solid white;
             }
+            
           }
           & strong {
             font-weight: 900;

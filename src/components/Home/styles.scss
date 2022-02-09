@@ -58,27 +58,32 @@
     display: flex;
     flex-direction: column;
     line-height: normal;
-    & h5 {
+    h5 {
       position: absolute;
       bottom: 15%;
       left: 3%;
       color: vars.$secondary-color;
       line-height: 1.4;
       width: 30%;
-      & h1 {
+      h1 {
         color: vars.$tertiary-color;
         margin: .1em 0;
       }
     }
-    & span {
+    span {
       text-transform:uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 7em;
+      height: 7em;
+      cursor: pointer;
       letter-spacing: 3px;
       position: absolute;
       bottom: 15%;
       right: 15%;
       color: black;
       font-size: 3em;
-      padding: 2.5em;
       border-radius: 50%;
       background-color: white;
     }

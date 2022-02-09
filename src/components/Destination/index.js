@@ -2,7 +2,7 @@ import React from 'react';
 import Header from 'src/components/Header';
 import background from 'src/assets/destination/background-destination-desktop.jpg'; 
 import moon from 'src/assets/destination/image-moon.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
 
@@ -28,19 +28,19 @@ export default function Destination() {
 
         <div className="destination__content"> 
           <div className="destination__content__title">
-            <nav>
-              <Link to="/moon" className="destination__content__title__select" activeClassName="destination__content__title__select--active" exact>
+            <nav className="destination__content__title__nav">
+              <NavLink to="/destination/moon" className="destination__content__title__select" exact>
                 <h5>MOON</h5>
-              </Link>
-              <Link to="/mars" className="destination__content__title__select" activeClassName="destination__content__title__select--active" exact>
+              </NavLink>
+              <NavLink to="/destination/mars" className="destination__content__title__select" exact>
                 <h5>MARS</h5>
-              </Link>
-              <Link to="/europa" className="destination__content__title__select" activeClassName="destination__content__title__select--active" exact>
+              </NavLink>
+              <NavLink to="/destination/europa" className="destination__content__title__select" exact>
                 <h5>EUROPA</h5>
-              </Link>
-              <Link to="/titan" className="destination__content__title__select" activeClassName="destination__content__title__select--active" exact>
+              </NavLink>
+              <NavLink to="/destination/titan" className="destination__content__title__select" exact>
                 <h5>TITAN</h5>
-              </Link>
+              </NavLink>
             </nav>
           </div>
           <div className="destination__content__text">
