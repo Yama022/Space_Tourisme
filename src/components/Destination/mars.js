@@ -1,9 +1,8 @@
 import React from 'react';
 import Header from 'src/components/Header';
+import Choice from 'src/components/Destination/choice';
 import background from 'src/assets/destination/background-destination-desktop.jpg'; 
 import mars from 'src/assets/destination/image-mars.png';
-import { Link } from 'react-router-dom';
-
 import './styles.scss';
 
 export default function Destination() {
@@ -27,23 +26,7 @@ export default function Destination() {
         </div>
 
         <div className="destination__content"> 
-          <div className="destination__content__title">
-            <nav>
-
-              <Link to="/destination/moon" className="destination__content__title__select" exact>
-                <h5>MOON</h5>
-              </Link>
-              <Link to="/destination/mars" className="destination__content__title__select" exact>
-                <h5>MARS</h5>
-              </Link>
-              <Link to="/destination/europa" className="destination__content__title__select" exact>
-                <h5>EUROPA</h5>
-              </Link>
-              <Link to="/destination/titan" className="destination__content__title__select" exact>
-                <h5>TITAN</h5>
-              </Link>
-            </nav>
-          </div>
+          <Choice />
           <div className="destination__content__text">
             <div className="destination__content__text__title">
               <h1>MARS</h1>
