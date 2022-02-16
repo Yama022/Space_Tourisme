@@ -11,11 +11,6 @@
     position: absolute;
     top: 25%;
     left: 15%;
-    &__nav {
-      .active > .destination__content__title__select {
-        border-bottom: 3px solid white;
-      }
-    }
     h1 {
       font-size: 2.5em;
       color: white;
@@ -47,37 +42,23 @@
     &__title {
       width: 70%;
       height: 20%;
-      & nav {
+      &__nav {
         display: flex;
         flex-wrap: wrap;
         color: white;
         justify-content: space-between;
         padding: .3em;
-        :visited {
-          border: 5px solid red;
-          color: red;
-        }
+        .active{
+          border-bottom: 3px solid white;
+          padding-bottom: .5em;
+      }
         & h5 {
           color: vars.$secondary-color;
           letter-spacing: 2px;
-          border-bottom: 1px solid red hidden;
           &:hover {
             color: white;
-            border-bottom: 3px solid white;
+            border-bottom: 3px solid grey;
             padding-bottom: .5em;
-          }
-        }
-      }
-      &__select {
-        &:after {
-          content: ""; 
-          display: block;
-          margin: 0 auto;
-        }
-        &--active {
-          border-bottom: 1px solid red;
-          &:after {
-            border-bottom: 1px solid red; 
           }
         }
       }
@@ -148,5 +129,6 @@
       }
     }
   }
+  
 }
 

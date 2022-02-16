@@ -3,7 +3,6 @@ import Header from 'src/components/Header';
 import Choice from 'src/components/Destination/choice';
 import background from 'src/assets/destination/background-destination-desktop.jpg'; 
 import moon from 'src/assets/destination/image-moon.png';
-import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
