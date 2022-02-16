@@ -1,8 +1,8 @@
 import React from 'react';
 import background from 'src/assets/destination/background-destination-desktop.jpg';
 import Header from 'src/components/Header';
-import { Link } from 'react-router-dom';
-import { RiCheckboxBlankCircleFill, RiCheckboxBlankCircleLine } from 'react-icons/ri';
+import Choice from 'src/components/Crew/choice';
+
 
 import './styles.scss';
 
@@ -26,22 +26,7 @@ export default function Crew() {
         </div>
 
         <div className="crew__content"> 
-          <div className="crew__content__title">
-            <nav>
-              <Link to="/douglas" className="crew__content__title__select" activeClassName="crew__content__title__select--active" exact>
-                <h5><RiCheckboxBlankCircleFill/></h5>
-              </Link>
-              <Link to="/mark" className="crew__content__title__select" activeClassName="crew__content__title__select--active" exact>
-                <h5><RiCheckboxBlankCircleLine/></h5>
-              </Link>
-              <Link to="/victor" className="crew__content__title__select" activeClassName="crew__content__title__select--active" exact>
-                <h5><RiCheckboxBlankCircleLine/></h5>
-              </Link>
-              <Link to="/anousheh" className="crew__content__title__select" activeClassName="crew__content__title__select--active" exact>
-                <h5><RiCheckboxBlankCircleLine/></h5>
-              </Link>
-            </nav>
-          </div>
+          <Choice />
           <div className="crew__content__text">
           </div>
 

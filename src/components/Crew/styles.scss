@@ -7,16 +7,22 @@
   width: 100vw;
   position: absolute;
   &__title {
+    min-width: 33rem;
     position: absolute;
     top: 25%;
     left: 15%;
-    & h1 {
+    &__nav {
+      .active > .crew__content__title__select {
+        border-bottom: 3px solid white;
+      }
+    }
+    h1 {
       font-size: 2.5em;
       color: white;
       text-transform: uppercase;
       letter-spacing: 6px;
       font-weight: bold;
-      & span {
+      span {
         color: grey;
         padding-right: .6em;
       }
@@ -143,3 +149,4 @@
     }
   }
 }
+
