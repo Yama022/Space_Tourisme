@@ -21,16 +21,13 @@ export default function Crew() {
           <h1><span>02</span>Meet your crew</h1>
         </div>
 
-        <div className="crew__image">
-          
-        </div>
-
         <div className="crew__content"> 
-          <Choice />
           <div className="crew__content__text">
           </div>
 
+            <Choice />
         </div>
+        
       </div>
 
     </div>

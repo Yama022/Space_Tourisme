@@ -20,11 +20,7 @@ export default function Destination() {
         <div className="destination__title">
           <h1><span>01</span>Pick your Destination</h1>
         </div>
-
-        <div className="destination__image">
-          
-        </div>
-
+        
         <div className="destination__content"> 
           <Choice />
           <div className="destination__content__text">

@@ -4,7 +4,7 @@ import { RiCheckboxBlankCircleFill, RiCheckboxBlankCircleLine } from 'react-icon
 
 import './styles.scss';
 
-export default function Choice() {
+export default function choice() {
   return (
     <div className="crew__content__title">
             <nav className="crew__content__title__nav">
